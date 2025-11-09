@@ -24,12 +24,12 @@ Airflow DAG for incremental extraction of currency exchange rates, storing histo
     GOOGLE_APPLICATION_CREDENTIALS=/opt/airflow/config/skelar-477222-84b8a172fdc2.json
    ```
    `GOOGLE_APPLICATION_CREDENTIALS` - replace the file name with the file you put in config folder in the previous step
-4. Run docker compose build command and wait for its completion:
+4. Run docker compose build command:
 
    ```bash
    docker compose build
    ```
-5. Run docker compose up -d:
+5. Start the services in detached mode:
 
    ```bash
    docker-compose up -d
@@ -39,3 +39,4 @@ Airflow DAG for incremental extraction of currency exchange rates, storing histo
    ```bash
     open http://localhost:8080
    ```
+   Default credentials: username `airflow`, password `airflow`
